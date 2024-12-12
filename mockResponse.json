@@ -1,0 +1,29 @@
+{
+  "response": {
+    "header": {
+      "resultCode": "00",
+      "resultMsg": "NORMAL SERVICE."
+    },
+    "body": {
+      "items": {
+        "item": {
+          "areadiv": 0,
+          "cgtdt": 20190924,
+          "cgthm": 2148,
+          "gate1": 9,
+          "gate2": 3,
+          "gate3": 0,
+          "gate4": 9,
+          "gateinfo1": 0,
+          "gateinfo2": 179,
+          "gateinfo3": 48,
+          "gateinfo4": 0,
+          "terno": 1
+        }
+      },
+      "numOfRows": 10,
+      "pageNo": 1,
+      "totalCount": 1
+    }
+  }
+}

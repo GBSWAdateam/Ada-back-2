@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/signup.css">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="cont">
+        <div class="form sign-up">
+            <h2>회원가입</h2>
+            <form action="/auth/signup/callback" method="POST">
+                <label>
+                    <span>이름</span>
+                    <input type="text" name="name" placeholder="이름" required>
+                </label>
+                <label>
+                    <span>이메일</span>
+                    <input type="email" name="email" placeholder="이메일" required>
+                </label>
+                <label>
+                    <sp an>비밀번호</span>
+                    <input type="password" name="password" placeholder="비밀번호" required>
+                </label>
+                <button type="submit" class="submit">회원가입</button>
+            </form>
+            <% if (error) { %>
+                <p class="error"><%= error %></p>
+            <% } %>
+        </div>
+        <a href="/auth/login/callback">로그인</a>
+    </div>
+</body>
+</html>

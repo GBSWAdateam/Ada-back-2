@@ -1,0 +1,6 @@
+{
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "accessibility.hideAccessibleView": true,
+    "editor.stickyScroll.defaultModel": "outlineModel",
+    "editor.suggest.showConstructors": true
+}

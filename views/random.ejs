@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>랜덤 추천</title>
+    <script async defer src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=<%= process.env.KAKAO_MAP_API_KEY %>&libraries=services"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>랜덤 추천 명소</h1>
+        <div id="map" style="width:100%;height:400px;"></div>
+        <div id="placeList" class="place-list"></div>
+        <script src="/js/random.js"></script>
+    </div>
+</body>
+</html>

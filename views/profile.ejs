@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>프로필</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <h1>프로필 페이지</h1>
+    <p>이름: <%= user.name %></p>
+    <p>이메일: <%= user.email %></p>
+    <div class="logout">
+        <a href="/auth/logout">로그아웃</a>
+    </div>
+
+    <h2>비밀번호 변경</h2>
+    <form action="/auth/change-password" method="POST">
+        <label>
+            <span>현재 비밀번호</span>
+            <input type="password" name="currentPassword" required>
+        </label>
+        <label>
+            <span>새 비밀번호</span>
+            <input type="password" name="newPassword" required>
+        </label>
+        <label>
+            <span>새 비밀번호 확인</span>
+            <input type="password" name="confirmPassword" required>
+        </label>
+        <button type="submit">비밀번호 변경</button>
+    </form>
+
+    <h2>회원 탈퇴</h2>
+    <form action="/auth/delete-account" method="POST">
+        <button type="submit">회원 탈퇴</button>
+    </form>
+
+    <% if (typeof error !== 'undefined' && error) { %>
+        <p class="error"><%= error %></p>
+    <% } %>
+    <% if (typeof success !== 'undefined' && success) { %>
+        <p class="success"><%= success %></p>
+    <% } %>
+</body>
+</html>
